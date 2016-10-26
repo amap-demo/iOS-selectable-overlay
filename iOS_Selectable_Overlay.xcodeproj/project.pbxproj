@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A042BB71DC0982900BB9641 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BB61DC0982900BB9641 /* main.m */; };
+		3A042BBA1DC0982900BB9641 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BB91DC0982900BB9641 /* AppDelegate.m */; };
+		3A042BC21DC0982900BB9641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A042BC11DC0982900BB9641 /* Assets.xcassets */; };
+		3A042BC51DC0982900BB9641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A042BC31DC0982900BB9641 /* LaunchScreen.storyboard */; };
+		3A042BD81DC098AB00BB9641 /* SelectableOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BCE1DC098AB00BB9641 /* SelectableOverlay.m */; };
+		3A042BD91DC098AB00BB9641 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BD01DC098AB00BB9641 /* Utility.m */; };
+		3A042BDB1DC098AB00BB9641 /* ClickOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BD71DC098AB00BB9641 /* ClickOverlayViewController.m */; };
+		908ED83D83511E54188A8EA7 /* libPods-iOS_Selectable_Overlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6C5C8B925D6049FEC0F54F /* libPods-iOS_Selectable_Overlay.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		032BC1AE4DC93CC687B9BF8E /* Pods-iOS_Selectable_Overlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Selectable_Overlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_Selectable_Overlay/Pods-iOS_Selectable_Overlay.release.xcconfig"; sourceTree = "<group>"; };
+		294DE8AC8A25E6F00AA9E558 /* Pods-iOS_Selectable_Overlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Selectable_Overlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_Selectable_Overlay/Pods-iOS_Selectable_Overlay.debug.xcconfig"; sourceTree = "<group>"; };
+		3A042BB21DC0982900BB9641 /* iOS_Selectable_Overlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Selectable_Overlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A042BB61DC0982900BB9641 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A042BB81DC0982900BB9641 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A042BB91DC0982900BB9641 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A042BC11DC0982900BB9641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A042BC41DC0982900BB9641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A042BC61DC0982900BB9641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A042BCD1DC098AB00BB9641 /* SelectableOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectableOverlay.h; sourceTree = "<group>"; };
+		3A042BCE1DC098AB00BB9641 /* SelectableOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectableOverlay.m; sourceTree = "<group>"; };
+		3A042BCF1DC098AB00BB9641 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		3A042BD01DC098AB00BB9641 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		3A042BD21DC098AB00BB9641 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		3A042BD61DC098AB00BB9641 /* ClickOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickOverlayViewController.h; sourceTree = "<group>"; };
+		3A042BD71DC098AB00BB9641 /* ClickOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickOverlayViewController.m; sourceTree = "<group>"; };
+		DE6C5C8B925D6049FEC0F54F /* libPods-iOS_Selectable_Overlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_Selectable_Overlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A042BAF1DC0982900BB9641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				908ED83D83511E54188A8EA7 /* libPods-iOS_Selectable_Overlay.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A042BA91DC0982900BB9641 = {
+			isa = PBXGroup;
+			children = (
+				3A042BB41DC0982900BB9641 /* iOS_Selectable_Overlay */,
+				3A042BB31DC0982900BB9641 /* Products */,
+				A53F6C6B359ABED3AA5A7FAD /* Pods */,
+				783BDA82BDAED3526142E5A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A042BB31DC0982900BB9641 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A042BB21DC0982900BB9641 /* iOS_Selectable_Overlay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A042BB41DC0982900BB9641 /* iOS_Selectable_Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				3A042BB81DC0982900BB9641 /* AppDelegate.h */,
+				3A042BB91DC0982900BB9641 /* AppDelegate.m */,
+				3A042BD31DC098AB00BB9641 /* Demo */,
+				3A042BCC1DC098AB00BB9641 /* ClickOverlay */,
+				3A042BD11DC098AB00BB9641 /* Configuration */,
+				3A042BC11DC0982900BB9641 /* Assets.xcassets */,
+				3A042BC31DC0982900BB9641 /* LaunchScreen.storyboard */,
+				3A042BC61DC0982900BB9641 /* Info.plist */,
+				3A042BB51DC0982900BB9641 /* Supporting Files */,
+			);
+			path = iOS_Selectable_Overlay;
+			sourceTree = "<group>";
+		};
+		3A042BB51DC0982900BB9641 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A042BB61DC0982900BB9641 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A042BCC1DC098AB00BB9641 /* ClickOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				3A042BCD1DC098AB00BB9641 /* SelectableOverlay.h */,
+				3A042BCE1DC098AB00BB9641 /* SelectableOverlay.m */,
+				3A042BCF1DC098AB00BB9641 /* Utility.h */,
+				3A042BD01DC098AB00BB9641 /* Utility.m */,
+			);
+			path = ClickOverlay;
+			sourceTree = "<group>";
+		};
+		3A042BD11DC098AB00BB9641 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3A042BD21DC098AB00BB9641 /* APIKey.h */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3A042BD31DC098AB00BB9641 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				3A042BD61DC098AB00BB9641 /* ClickOverlayViewController.h */,
+				3A042BD71DC098AB00BB9641 /* ClickOverlayViewController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		783BDA82BDAED3526142E5A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE6C5C8B925D6049FEC0F54F /* libPods-iOS_Selectable_Overlay.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A53F6C6B359ABED3AA5A7FAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				294DE8AC8A25E6F00AA9E558 /* Pods-iOS_Selectable_Overlay.debug.xcconfig */,
+				032BC1AE4DC93CC687B9BF8E /* Pods-iOS_Selectable_Overlay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A042BB11DC0982900BB9641 /* iOS_Selectable_Overlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A042BC91DC0982900BB9641 /* Build configuration list for PBXNativeTarget "iOS_Selectable_Overlay" */;
+			buildPhases = (
+				0BE9BE9574659B8EE428AD7D /* [CP] Check Pods Manifest.lock */,
+				3A042BAE1DC0982900BB9641 /* Sources */,
+				3A042BAF1DC0982900BB9641 /* Frameworks */,
+				3A042BB01DC0982900BB9641 /* Resources */,
+				42457BF4A8923C7C97F8A766 /* [CP] Embed Pods Frameworks */,
+				42C8DDC11400D0E3D68B5BF7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOS_Selectable_Overlay;
+			productName = iOS_Selectable_Overlay;
+			productReference = 3A042BB21DC0982900BB9641 /* iOS_Selectable_Overlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A042BAA1DC0982900BB9641 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = AutoNavi;
+				TargetAttributes = {
+					3A042BB11DC0982900BB9641 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 3A042BAD1DC0982900BB9641 /* Build configuration list for PBXProject "iOS_Selectable_Overlay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A042BA91DC0982900BB9641;
+			productRefGroup = 3A042BB31DC0982900BB9641 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A042BB11DC0982900BB9641 /* iOS_Selectable_Overlay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A042BB01DC0982900BB9641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A042BC51DC0982900BB9641 /* LaunchScreen.storyboard in Resources */,
+				3A042BC21DC0982900BB9641 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BE9BE9574659B8EE428AD7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		42457BF4A8923C7C97F8A766 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_Selectable_Overlay/Pods-iOS_Selectable_Overlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42C8DDC11400D0E3D68B5BF7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_Selectable_Overlay/Pods-iOS_Selectable_Overlay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A042BAE1DC0982900BB9641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A042BD91DC098AB00BB9641 /* Utility.m in Sources */,
+				3A042BBA1DC0982900BB9641 /* AppDelegate.m in Sources */,
+				3A042BD81DC098AB00BB9641 /* SelectableOverlay.m in Sources */,
+				3A042BDB1DC098AB00BB9641 /* ClickOverlayViewController.m in Sources */,
+				3A042BB71DC0982900BB9641 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A042BC31DC0982900BB9641 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A042BC41DC0982900BB9641 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A042BC71DC0982900BB9641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A042BC81DC0982900BB9641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A042BCA1DC0982900BB9641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 294DE8AC8A25E6F00AA9E558 /* Pods-iOS_Selectable_Overlay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = iOS_Selectable_Overlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-Selectable-Overlay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "87cd0391-16b0-4688-90bd-386a7bfa6ffc";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+			};
+			name = Debug;
+		};
+		3A042BCB1DC0982900BB9641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 032BC1AE4DC93CC687B9BF8E /* Pods-iOS_Selectable_Overlay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = iOS_Selectable_Overlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-Selectable-Overlay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A042BAD1DC0982900BB9641 /* Build configuration list for PBXProject "iOS_Selectable_Overlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A042BC71DC0982900BB9641 /* Debug */,
+				3A042BC81DC0982900BB9641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A042BC91DC0982900BB9641 /* Build configuration list for PBXNativeTarget "iOS_Selectable_Overlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A042BCA1DC0982900BB9641 /* Debug */,
+				3A042BCB1DC0982900BB9641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A042BAA1DC0982900BB9641 /* Project object */;
+}
