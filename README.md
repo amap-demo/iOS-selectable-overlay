@@ -52,6 +52,6 @@ if (isOverlayWithLineWidthContainsPoint(selectableOverlay.overlay, mapPointDista
 
 ### 截图效果
 
-![selectCircle](https://raw.githubusercontent.com/cysgit/iOS_3D_ClickOverlay/master/iOS_3D_ClickOverlay/Resources/selectCircle.png)
-![unselectCircle](https://raw.githubusercontent.com/cysgit/iOS_3D_ClickOverlay/master/iOS_3D_ClickOverlay/Resources/unselectCircle.png)
+![selectCircle](https://raw.githubusercontent.com/amap-demo/iOS-selectable-overlay/master/iOS_Selectable_Overlay/Resources/selectCircle.png)
+![unselectCircle](https://raw.githubusercontent.com/amap-demo/iOS-selectable-overlay/master/iOS_Selectable_Overlay/Resources/unselectCircle.png)
 
