@@ -12,7 +12,7 @@
 /*!
  判断点是否在overlay图形中
  @param overlay 指定的overlay
- @param point   指定的点
+ @param mapPoint   指定的点
  @param mapPointDistance 提供overlay的线宽（需换算到MAMapPoint坐标系）
  @return 若点在overlay中，返回YES，否则NO
  */
