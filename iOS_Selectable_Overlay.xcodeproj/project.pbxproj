@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D5AA1D738F9A788DAB22EFD /* libPods-iOS_Selectable_Overlay-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 904FE849FD351052FA10180B /* libPods-iOS_Selectable_Overlay-swift.a */; };
 		3A042BB71DC0982900BB9641 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BB61DC0982900BB9641 /* main.m */; };
 		3A042BBA1DC0982900BB9641 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BB91DC0982900BB9641 /* AppDelegate.m */; };
 		3A042BC21DC0982900BB9641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A042BC11DC0982900BB9641 /* Assets.xcassets */; };
@@ -14,6 +15,15 @@
 		3A042BD81DC098AB00BB9641 /* SelectableOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BCE1DC098AB00BB9641 /* SelectableOverlay.m */; };
 		3A042BD91DC098AB00BB9641 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BD01DC098AB00BB9641 /* Utility.m */; };
 		3A042BDB1DC098AB00BB9641 /* ClickOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BD71DC098AB00BB9641 /* ClickOverlayViewController.m */; };
+		6A55DE8E1DFFF62500AFFB69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DE8D1DFFF62500AFFB69 /* AppDelegate.swift */; };
+		6A55DE901DFFF62500AFFB69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DE8F1DFFF62500AFFB69 /* ViewController.swift */; };
+		6A55DE931DFFF62500AFFB69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A55DE911DFFF62500AFFB69 /* Main.storyboard */; };
+		6A55DE951DFFF62500AFFB69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A55DE941DFFF62500AFFB69 /* Assets.xcassets */; };
+		6A55DE981DFFF62500AFFB69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A55DE961DFFF62500AFFB69 /* LaunchScreen.storyboard */; };
+		6A6C53AD1E0282E700739D47 /* SelectableOverlay.h in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BCD1DC098AB00BB9641 /* SelectableOverlay.h */; };
+		6A6C53AE1E0282E700739D47 /* SelectableOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BCE1DC098AB00BB9641 /* SelectableOverlay.m */; };
+		6A6C53AF1E02861200739D47 /* Utility.h in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BCF1DC098AB00BB9641 /* Utility.h */; };
+		6A6C53B01E02861200739D47 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BD01DC098AB00BB9641 /* Utility.m */; };
 		908ED83D83511E54188A8EA7 /* libPods-iOS_Selectable_Overlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6C5C8B925D6049FEC0F54F /* libPods-iOS_Selectable_Overlay.a */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +44,17 @@
 		3A042BD21DC098AB00BB9641 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
 		3A042BD61DC098AB00BB9641 /* ClickOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickOverlayViewController.h; sourceTree = "<group>"; };
 		3A042BD71DC098AB00BB9641 /* ClickOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickOverlayViewController.m; sourceTree = "<group>"; };
+		6A55DE8B1DFFF62500AFFB69 /* iOS_Selectable_Overlay-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS_Selectable_Overlay-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A55DE8D1DFFF62500AFFB69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A55DE8F1DFFF62500AFFB69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A55DE921DFFF62500AFFB69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A55DE941DFFF62500AFFB69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A55DE971DFFF62500AFFB69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A55DE991DFFF62500AFFB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A55DE9D1DFFF66A00AFFB69 /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		787CC0DE3F2FC1DB340FDB3F /* Pods-iOS_Selectable_Overlay-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Selectable_Overlay-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_Selectable_Overlay-swift/Pods-iOS_Selectable_Overlay-swift.release.xcconfig"; sourceTree = "<group>"; };
+		904FE849FD351052FA10180B /* libPods-iOS_Selectable_Overlay-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_Selectable_Overlay-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9441F5A5F66654B5E053A889 /* Pods-iOS_Selectable_Overlay-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Selectable_Overlay-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_Selectable_Overlay-swift/Pods-iOS_Selectable_Overlay-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		DE6C5C8B925D6049FEC0F54F /* libPods-iOS_Selectable_Overlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_Selectable_Overlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -46,6 +67,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A55DE881DFFF62500AFFB69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D5AA1D738F9A788DAB22EFD /* libPods-iOS_Selectable_Overlay-swift.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -53,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				3A042BB41DC0982900BB9641 /* iOS_Selectable_Overlay */,
+				6A55DE8C1DFFF62500AFFB69 /* iOS_Selectable_Overlay-swift */,
 				3A042BB31DC0982900BB9641 /* Products */,
 				A53F6C6B359ABED3AA5A7FAD /* Pods */,
 				783BDA82BDAED3526142E5A6 /* Frameworks */,
@@ -63,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				3A042BB21DC0982900BB9641 /* iOS_Selectable_Overlay.app */,
+				6A55DE8B1DFFF62500AFFB69 /* iOS_Selectable_Overlay-swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,10 +150,25 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		6A55DE8C1DFFF62500AFFB69 /* iOS_Selectable_Overlay-swift */ = {
+			isa = PBXGroup;
+			children = (
+				6A55DE8D1DFFF62500AFFB69 /* AppDelegate.swift */,
+				6A55DE8F1DFFF62500AFFB69 /* ViewController.swift */,
+				6A55DE9D1DFFF66A00AFFB69 /* Swift-Bridging-Header.h */,
+				6A55DE911DFFF62500AFFB69 /* Main.storyboard */,
+				6A55DE941DFFF62500AFFB69 /* Assets.xcassets */,
+				6A55DE961DFFF62500AFFB69 /* LaunchScreen.storyboard */,
+				6A55DE991DFFF62500AFFB69 /* Info.plist */,
+			);
+			path = "iOS_Selectable_Overlay-swift";
+			sourceTree = "<group>";
+		};
 		783BDA82BDAED3526142E5A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				DE6C5C8B925D6049FEC0F54F /* libPods-iOS_Selectable_Overlay.a */,
+				904FE849FD351052FA10180B /* libPods-iOS_Selectable_Overlay-swift.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +178,8 @@
 			children = (
 				294DE8AC8A25E6F00AA9E558 /* Pods-iOS_Selectable_Overlay.debug.xcconfig */,
 				032BC1AE4DC93CC687B9BF8E /* Pods-iOS_Selectable_Overlay.release.xcconfig */,
+				9441F5A5F66654B5E053A889 /* Pods-iOS_Selectable_Overlay-swift.debug.xcconfig */,
+				787CC0DE3F2FC1DB340FDB3F /* Pods-iOS_Selectable_Overlay-swift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -159,17 +207,43 @@
 			productReference = 3A042BB21DC0982900BB9641 /* iOS_Selectable_Overlay.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6A55DE8A1DFFF62500AFFB69 /* iOS_Selectable_Overlay-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A55DE9C1DFFF62500AFFB69 /* Build configuration list for PBXNativeTarget "iOS_Selectable_Overlay-swift" */;
+			buildPhases = (
+				05803E0DB0E8DAA71120A382 /* [CP] Check Pods Manifest.lock */,
+				6A55DE871DFFF62500AFFB69 /* Sources */,
+				6A55DE881DFFF62500AFFB69 /* Frameworks */,
+				6A55DE891DFFF62500AFFB69 /* Resources */,
+				2CC40CB9013F62891A00BAC3 /* [CP] Embed Pods Frameworks */,
+				CDF204768111403D37D1A9B3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS_Selectable_Overlay-swift";
+			productName = "iOS_Selectable_Overlay-swift";
+			productReference = 6A55DE8B1DFFF62500AFFB69 /* iOS_Selectable_Overlay-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3A042BAA1DC0982900BB9641 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = AutoNavi;
 				TargetAttributes = {
 					3A042BB11DC0982900BB9641 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+					};
+					6A55DE8A1DFFF62500AFFB69 = {
+						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = YMJ372W38W;
 						ProvisioningStyle = Manual;
 					};
@@ -189,6 +263,7 @@
 			projectRoot = "";
 			targets = (
 				3A042BB11DC0982900BB9641 /* iOS_Selectable_Overlay */,
+				6A55DE8A1DFFF62500AFFB69 /* iOS_Selectable_Overlay-swift */,
 			);
 		};
 /* End PBXProject section */
@@ -203,9 +278,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A55DE891DFFF62500AFFB69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A55DE981DFFF62500AFFB69 /* LaunchScreen.storyboard in Resources */,
+				6A55DE951DFFF62500AFFB69 /* Assets.xcassets in Resources */,
+				6A55DE931DFFF62500AFFB69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		05803E0DB0E8DAA71120A382 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		0BE9BE9574659B8EE428AD7D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,7 +318,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2CC40CB9013F62891A00BAC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_Selectable_Overlay-swift/Pods-iOS_Selectable_Overlay-swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		42457BF4A8923C7C97F8A766 /* [CP] Embed Pods Frameworks */ = {
@@ -251,6 +366,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_Selectable_Overlay/Pods-iOS_Selectable_Overlay-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CDF204768111403D37D1A9B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS_Selectable_Overlay-swift/Pods-iOS_Selectable_Overlay-swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -266,6 +396,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A55DE871DFFF62500AFFB69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A6C53AF1E02861200739D47 /* Utility.h in Sources */,
+				6A6C53B01E02861200739D47 /* Utility.m in Sources */,
+				6A6C53AD1E0282E700739D47 /* SelectableOverlay.h in Sources */,
+				6A6C53AE1E0282E700739D47 /* SelectableOverlay.m in Sources */,
+				6A55DE901DFFF62500AFFB69 /* ViewController.swift in Sources */,
+				6A55DE8E1DFFF62500AFFB69 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -273,6 +416,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				3A042BC41DC0982900BB9641 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6A55DE911DFFF62500AFFB69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A55DE921DFFF62500AFFB69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A55DE961DFFF62500AFFB69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A55DE971DFFF62500AFFB69 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -389,12 +548,56 @@
 			baseConfigurationReference = 032BC1AE4DC93CC687B9BF8E /* Pods-iOS_Selectable_Overlay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YMJ372W38W;
 				INFOPLIST_FILE = iOS_Selectable_Overlay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-Selectable-Overlay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
+			};
+			name = Release;
+		};
+		6A55DE9A1DFFF62500AFFB69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9441F5A5F66654B5E053A889 /* Pods-iOS_Selectable_Overlay-swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "iOS_Selectable_Overlay-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-Selectable-Overlay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d723e77c-6c92-4e6a-98d7-8717d0b88b87";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "./$(TARGET_NAME)/Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A55DE9B1DFFF62500AFFB69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 787CC0DE3F2FC1DB340FDB3F /* Pods-iOS_Selectable_Overlay-swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "iOS_Selectable_Overlay-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-Selectable-Overlay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d723e77c-6c92-4e6a-98d7-8717d0b88b87";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				SWIFT_OBJC_BRIDGING_HEADER = "./$(TARGET_NAME)/Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -415,6 +618,15 @@
 			buildConfigurations = (
 				3A042BCA1DC0982900BB9641 /* Debug */,
 				3A042BCB1DC0982900BB9641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A55DE9C1DFFF62500AFFB69 /* Build configuration list for PBXNativeTarget "iOS_Selectable_Overlay-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A55DE9A1DFFF62500AFFB69 /* Debug */,
+				6A55DE9B1DFFF62500AFFB69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

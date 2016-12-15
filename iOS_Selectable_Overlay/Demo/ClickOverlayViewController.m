@@ -13,9 +13,6 @@
 
 @interface ClickOverlayViewController ()<UIGestureRecognizerDelegate>
 
-@property (nonatomic, strong) UITapGestureRecognizer *singleTap;
-@property (nonatomic, strong) UITapGestureRecognizer *doubleTap;
-
 @property (nonatomic, strong) NSMutableArray *overlays;
 
 @end
@@ -24,6 +21,44 @@
 @implementation ClickOverlayViewController
 
 #pragma mark - MAMapViewDelegate
+
+- (void)mapView:(MAMapView *)mapView didSingleTappedAtCoordinate:(CLLocationCoordinate2D)coordinate
+{
+    /* 逆序遍历overlay判断单击点是否在overlay响应区域内. */
+    [self.mapView.overlays enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id<MAOverlay> overlay, NSUInteger idx, BOOL *stop)
+     {
+         if ([overlay isKindOfClass:[SelectableOverlay class]])
+         {
+             SelectableOverlay *selectableOverlay = overlay;
+             
+             /* 获取overlay对应的renderer. */
+             MAOverlayPathRenderer * renderer = (MAOverlayPathRenderer *)[self.mapView rendererForOverlay:selectableOverlay];
+             
+             /* 把屏幕坐标转换为MAMapPoint坐标. */
+             MAMapPoint mapPoint = MAMapPointForCoordinate(coordinate);
+             /* overlay的线宽换算到MAMapPoint坐标系的宽度. */
+             double mapPointDistance = [self mapPointsPerPointInViewAtCurrentZoomLevel] * renderer.lineWidth;
+             
+             /* 判断是否选中了overlay. */
+             if (isOverlayWithLineWidthContainsPoint(selectableOverlay.overlay, mapPointDistance, mapPoint) )
+             {
+                 /* 设置选中状态. */
+                 selectableOverlay.selected = !selectableOverlay.isSelected;
+                 
+                 /* 修改view选中颜色. */
+                 renderer.fillColor   = selectableOverlay.isSelected? selectableOverlay.selectedColor:selectableOverlay.regularColor;
+                 renderer.strokeColor = selectableOverlay.isSelected? selectableOverlay.selectedColor:selectableOverlay.regularColor;
+                 
+                 /* 修改overlay覆盖的顺序. */
+                 [self.mapView exchangeOverlayAtIndex:idx withOverlayAtIndex:self.mapView.overlays.count - 1];
+                 
+                 [renderer glRender];
+                 
+                 *stop = YES;
+             }
+         }
+     }];
+}
 
 - (MAOverlayRenderer *)mapView:(MAMapView *)mapView rendererForOverlay:(id<MAOverlay>)overlay
 {
@@ -75,79 +110,7 @@
     return [self.mapView metersPerPointForCurrentZoom] * MAMapPointsPerMeterAtLatitude(self.mapView.centerCoordinate.latitude);
 }
 
-#pragma mark - UIGestureRecognizerDelegate
-
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
-{
-    return YES;
-}
-
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
-{
-    return YES;
-}
-
-#pragma mark - Handle Gestures
-
-- (void)handleSingleTap:(UITapGestureRecognizer *)theSingleTap
-{
-    CGPoint touchLocation = [theSingleTap locationInView:self.mapView];
-    
-    NSLog(@"touchLocation (%f %f) zoomLevel %f", touchLocation.x, touchLocation.y, self.mapView.zoomLevel);
-    
-    /* 逆序遍历overlay判断单击点是否在overlay响应区域内. */
-    [self.mapView.overlays enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id<MAOverlay> overlay, NSUInteger idx, BOOL *stop)
-    {
-        if ([overlay isKindOfClass:[SelectableOverlay class]])
-        {
-            SelectableOverlay *selectableOverlay = overlay;
-            
-            /* 获取overlay对应的renderer. */
-            MAOverlayPathRenderer * renderer = (MAOverlayPathRenderer *)[self.mapView rendererForOverlay:selectableOverlay];
-            
-            /* 把屏幕坐标转换为MAMapPoint坐标. */
-            MAMapPoint mapPoint = MAMapPointForCoordinate([self.mapView convertPoint:touchLocation toCoordinateFromView:self.mapView]);
-            /* overlay的线宽换算到MAMapPoint坐标系的宽度. */
-            double mapPointDistance = [self mapPointsPerPointInViewAtCurrentZoomLevel] * renderer.lineWidth;
-            
-            /* 判断是否选中了overlay. */
-            if (isOverlayWithLineWidthContainsPoint(selectableOverlay.overlay, mapPointDistance, mapPoint) )
-            {
-                /* 设置选中状态. */
-                selectableOverlay.selected = !selectableOverlay.isSelected;
-                
-                /* 修改view选中颜色. */
-                renderer.fillColor   = selectableOverlay.isSelected? selectableOverlay.selectedColor:selectableOverlay.regularColor;
-                renderer.strokeColor = selectableOverlay.isSelected? selectableOverlay.selectedColor:selectableOverlay.regularColor;
-                
-                /* 修改overlay覆盖的顺序. */
-                [self.mapView exchangeOverlayAtIndex:idx withOverlayAtIndex:self.mapView.overlays.count - 1];
-                
-                [renderer glRender];
-                
-                *stop = YES;
-            }
-            
-        }
-        
-    }];
-
-}
-
 #pragma mark - Initialization
-
-- (void)setupGestures
-{
-    // 需要额外添加一个双击手势，以避免当执行mapView的双击动作时响应两次单击手势。
-    self.doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:nil];
-    self.doubleTap.delegate = self;
-    self.doubleTap.numberOfTapsRequired = 2;
-    [self.view addGestureRecognizer:self.doubleTap];
-    
-    self.singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
-    self.singleTap.delegate = self;
-    [self.view addGestureRecognizer:self.singleTap];
-}
 
 - (void)initOverlays
 {
@@ -246,8 +209,6 @@
     [super viewDidLoad];
     
     [self initMapView];
-    
-    [self setupGestures];
 
     [self.mapView addOverlays:self.overlays];
     
