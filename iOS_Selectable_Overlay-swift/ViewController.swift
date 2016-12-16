@@ -107,10 +107,7 @@ class ViewController: UIViewController, MAMapViewDelegate {
                     
                     // 修改顺序
                     self.mapView.exchangeOverlay(at: UInt(index), withOverlayAt: UInt(self.mapView.overlays.count - 1))
-                    
                 }
-                
-                
             }
         }
     }

@@ -38,6 +38,80 @@ if (isOverlayWithLineWidthContainsPoint(selectableOverlay.overlay, mapPointDista
     // ... 
 }
 ```
+
+###核心代码
+`Objective-C`
+```
+- (void)mapView:(MAMapView *)mapView didSingleTappedAtCoordinate:(CLLocationCoordinate2D)coordinate
+{
+    /* 逆序遍历overlay判断单击点是否在overlay响应区域内. */
+    [self.mapView.overlays enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id<MAOverlay> overlay, NSUInteger idx, BOOL *stop)
+    {
+        if ([overlay isKindOfClass:[SelectableOverlay class]])
+        {
+            SelectableOverlay *selectableOverlay = overlay;
+
+            /* 获取overlay对应的renderer. */
+            MAOverlayPathRenderer * renderer = (MAOverlayPathRenderer *)[self.mapView rendererForOverlay:selectableOverlay];
+
+            /* 把屏幕坐标转换为MAMapPoint坐标. */
+            MAMapPoint mapPoint = MAMapPointForCoordinate(coordinate);
+            /* overlay的线宽换算到MAMapPoint坐标系的宽度. */
+            double mapPointDistance = [self mapPointsPerPointInViewAtCurrentZoomLevel] * renderer.lineWidth;
+
+            /* 判断是否选中了overlay. */
+            if (isOverlayWithLineWidthContainsPoint(selectableOverlay.overlay, mapPointDistance, mapPoint) )
+            {
+                /* 设置选中状态. */
+                selectableOverlay.selected = !selectableOverlay.isSelected;
+
+                /* 修改view选中颜色. */
+                renderer.fillColor   = selectableOverlay.isSelected? selectableOverlay.selectedColor:selectableOverlay.regularColor;
+                renderer.strokeColor = selectableOverlay.isSelected? selectableOverlay.selectedColor:selectableOverlay.regularColor;
+
+                /* 修改overlay覆盖的顺序. */
+                [self.mapView exchangeOverlayAtIndex:idx withOverlayAtIndex:self.mapView.overlays.count - 1];
+
+                [renderer glRender];
+
+                *stop = YES;
+            }
+        }
+    }];
+}
+
+```
+
+`Swift`
+```
+func mapView(_ mapView: MAMapView!, didSingleTappedAt coordinate: CLLocationCoordinate2D) {
+
+    for (index, overlay) in mapView.overlays.enumerated().reversed() {
+        if (overlay as AnyObject).isKind(of: SelectableOverlay.self) {
+            let selectableOverlay: SelectableOverlay = overlay as! SelectableOverlay;
+
+            let renderer: MAOverlayPathRenderer = self.mapView.renderer(for: selectableOverlay) as! MAOverlayPathRenderer
+            let mapPoint = MAMapPointForCoordinate(coordinate)
+            let distance = self.mapPointsPerPointInViewAtCurrentZoomLevel()
+
+            // 判断是否选中了overlay
+            if isOverlayWithLineWidthContainsPoint(selectableOverlay.overlay, distance, mapPoint) {
+                // selected
+                selectableOverlay.isSelected = !selectableOverlay.isSelected
+
+                // change color
+                renderer.strokeColor = selectableOverlay.isSelected ? selectableOverlay.selectedColor : selectableOverlay.regularColor
+                renderer.fillColor = selectableOverlay.isSelected ? selectableOverlay.selectedColor : selectableOverlay.regularColor
+
+                // 修改顺序
+                self.mapView.exchangeOverlay(at: UInt(index), withOverlayAt: UInt(self.mapView.overlays.count - 1))
+            }
+        }
+    }
+}
+
+```
+
 详见工程Demo文件夹。
 
 ### 架构
