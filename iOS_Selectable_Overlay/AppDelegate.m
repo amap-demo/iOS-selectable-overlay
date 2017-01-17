@@ -18,25 +18,10 @@
 
 @implementation AppDelegate
 
-- (void)configureAPIKey
-{
-    if ([APIKey length] == 0)
-    {
-        NSString *reason = [NSString stringWithFormat:@"apiKey为空，请检查key是否正确设置。"];
-        
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:reason delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        
-        [alert show];
-    }
-    
-    [AMapServices sharedServices].apiKey = (NSString *)APIKey;
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    [self configureAPIKey];
     
     self.viewController = [[ClickOverlayViewController alloc] init];
     

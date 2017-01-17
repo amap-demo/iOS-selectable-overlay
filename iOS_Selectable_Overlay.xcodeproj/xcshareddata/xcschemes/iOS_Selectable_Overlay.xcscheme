@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D99D74A01E2E19C5000D48AE"
+               BuildableName = "iOS_Selectable_OverlayUITests.xctest"
+               BlueprintName = "iOS_Selectable_OverlayUITests"
+               ReferencedContainer = "container:iOS_Selectable_Overlay.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

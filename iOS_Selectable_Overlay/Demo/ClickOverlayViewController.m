@@ -212,6 +212,10 @@
 
     [self.mapView addOverlays:self.overlays];
     
+    self.mapView.centerCoordinate = CLLocationCoordinate2DMake(39.953076, 116.356767);
+    
+//    self.mapView.zoomLevel = 12;
+    
 }
 
 @end

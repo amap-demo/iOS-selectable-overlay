@@ -25,7 +25,18 @@
 		6A6C53AF1E02861200739D47 /* Utility.h in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BCF1DC098AB00BB9641 /* Utility.h */; };
 		6A6C53B01E02861200739D47 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A042BD01DC098AB00BB9641 /* Utility.m */; };
 		908ED83D83511E54188A8EA7 /* libPods-iOS_Selectable_Overlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6C5C8B925D6049FEC0F54F /* libPods-iOS_Selectable_Overlay.a */; };
+		D99D74A41E2E19C5000D48AE /* iOS_Selectable_OverlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D99D74A31E2E19C5000D48AE /* iOS_Selectable_OverlayUITests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D99D74A61E2E19C5000D48AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A042BAA1DC0982900BB9641 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A042BB11DC0982900BB9641;
+			remoteInfo = iOS_Selectable_Overlay;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		032BC1AE4DC93CC687B9BF8E /* Pods-iOS_Selectable_Overlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Selectable_Overlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_Selectable_Overlay/Pods-iOS_Selectable_Overlay.release.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +66,9 @@
 		787CC0DE3F2FC1DB340FDB3F /* Pods-iOS_Selectable_Overlay-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Selectable_Overlay-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_Selectable_Overlay-swift/Pods-iOS_Selectable_Overlay-swift.release.xcconfig"; sourceTree = "<group>"; };
 		904FE849FD351052FA10180B /* libPods-iOS_Selectable_Overlay-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_Selectable_Overlay-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9441F5A5F66654B5E053A889 /* Pods-iOS_Selectable_Overlay-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Selectable_Overlay-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_Selectable_Overlay-swift/Pods-iOS_Selectable_Overlay-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		D99D74A11E2E19C5000D48AE /* iOS_Selectable_OverlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_Selectable_OverlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99D74A31E2E19C5000D48AE /* iOS_Selectable_OverlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Selectable_OverlayUITests.m; sourceTree = "<group>"; };
+		D99D74A51E2E19C5000D48AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE6C5C8B925D6049FEC0F54F /* libPods-iOS_Selectable_Overlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS_Selectable_Overlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +89,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D99D749E1E2E19C5000D48AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,6 +104,7 @@
 			children = (
 				3A042BB41DC0982900BB9641 /* iOS_Selectable_Overlay */,
 				6A55DE8C1DFFF62500AFFB69 /* iOS_Selectable_Overlay-swift */,
+				D99D74A21E2E19C5000D48AE /* iOS_Selectable_OverlayUITests */,
 				3A042BB31DC0982900BB9641 /* Products */,
 				A53F6C6B359ABED3AA5A7FAD /* Pods */,
 				783BDA82BDAED3526142E5A6 /* Frameworks */,
@@ -94,6 +116,7 @@
 			children = (
 				3A042BB21DC0982900BB9641 /* iOS_Selectable_Overlay.app */,
 				6A55DE8B1DFFF62500AFFB69 /* iOS_Selectable_Overlay-swift.app */,
+				D99D74A11E2E19C5000D48AE /* iOS_Selectable_OverlayUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +207,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D99D74A21E2E19C5000D48AE /* iOS_Selectable_OverlayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D99D74A31E2E19C5000D48AE /* iOS_Selectable_OverlayUITests.m */,
+				D99D74A51E2E19C5000D48AE /* Info.plist */,
+			);
+			path = iOS_Selectable_OverlayUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +259,24 @@
 			productReference = 6A55DE8B1DFFF62500AFFB69 /* iOS_Selectable_Overlay-swift.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D99D74A01E2E19C5000D48AE /* iOS_Selectable_OverlayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D99D74AA1E2E19C5000D48AE /* Build configuration list for PBXNativeTarget "iOS_Selectable_OverlayUITests" */;
+			buildPhases = (
+				D99D749D1E2E19C5000D48AE /* Sources */,
+				D99D749E1E2E19C5000D48AE /* Frameworks */,
+				D99D749F1E2E19C5000D48AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D99D74A71E2E19C5000D48AE /* PBXTargetDependency */,
+			);
+			name = iOS_Selectable_OverlayUITests;
+			productName = iOS_Selectable_OverlayUITests;
+			productReference = D99D74A11E2E19C5000D48AE /* iOS_Selectable_OverlayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -247,6 +297,12 @@
 						DevelopmentTeam = YMJ372W38W;
 						ProvisioningStyle = Manual;
 					};
+					D99D74A01E2E19C5000D48AE = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+						TestTargetID = 3A042BB11DC0982900BB9641;
+					};
 				};
 			};
 			buildConfigurationList = 3A042BAD1DC0982900BB9641 /* Build configuration list for PBXProject "iOS_Selectable_Overlay" */;
@@ -264,6 +320,7 @@
 			targets = (
 				3A042BB11DC0982900BB9641 /* iOS_Selectable_Overlay */,
 				6A55DE8A1DFFF62500AFFB69 /* iOS_Selectable_Overlay-swift */,
+				D99D74A01E2E19C5000D48AE /* iOS_Selectable_OverlayUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,6 +342,13 @@
 				6A55DE981DFFF62500AFFB69 /* LaunchScreen.storyboard in Resources */,
 				6A55DE951DFFF62500AFFB69 /* Assets.xcassets in Resources */,
 				6A55DE931DFFF62500AFFB69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D99D749F1E2E19C5000D48AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +473,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D99D749D1E2E19C5000D48AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99D74A41E2E19C5000D48AE /* iOS_Selectable_OverlayUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D99D74A71E2E19C5000D48AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A042BB11DC0982900BB9641 /* iOS_Selectable_Overlay */;
+			targetProxy = D99D74A61E2E19C5000D48AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3A042BC31DC0982900BB9641 /* LaunchScreen.storyboard */ = {
@@ -602,6 +682,38 @@
 			};
 			name = Release;
 		};
+		D99D74A81E2E19C5000D48AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = iOS_Selectable_OverlayUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-Selectable-OverlayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = iOS_Selectable_Overlay;
+			};
+			name = Debug;
+		};
+		D99D74A91E2E19C5000D48AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = iOS_Selectable_OverlayUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-Selectable-OverlayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = iOS_Selectable_Overlay;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -631,6 +743,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D99D74AA1E2E19C5000D48AE /* Build configuration list for PBXNativeTarget "iOS_Selectable_OverlayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D99D74A81E2E19C5000D48AE /* Debug */,
+				D99D74A91E2E19C5000D48AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
