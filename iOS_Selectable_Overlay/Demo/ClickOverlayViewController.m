@@ -212,9 +212,7 @@
 
     [self.mapView addOverlays:self.overlays];
     
-    self.mapView.centerCoordinate = CLLocationCoordinate2DMake(39.953076, 116.356767);
-    
-//    self.mapView.zoomLevel = 12;
+    self.mapView.centerCoordinate = CLLocationCoordinate2DMake(39.953076, 116.356767);  //设置一下地图的中心点在多边形overlay的中心，方便UITest
     
 }
 
