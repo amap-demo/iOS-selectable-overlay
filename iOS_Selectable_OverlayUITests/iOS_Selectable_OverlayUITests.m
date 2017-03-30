@@ -34,7 +34,7 @@
 
 - (void)testExample {
     
-    XCUIElement *centerElement = [[[[[[[[[XCUIApplication alloc] init].otherElements containingType:XCUIElementTypeNavigationBar identifier:@"Selectable Overlay"] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther] elementBoundByIndex:1];
+    XCUIElement *centerElement = [[XCUIApplication alloc] init].otherElements[@"mamapview"];
     
     sleep(1);
     
